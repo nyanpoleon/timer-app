@@ -34,6 +34,9 @@ function startTimer() {
         if (totalTime < 0) {
             clearInterval(timerInterval);
             document.getElementById("timer").innerHTML = "Timer Finished!";
+            document.getElementById("audio").play();
+            alert("Time Finished!");
+            return;
         }
     }, 1000);
 }
@@ -45,3 +48,10 @@ function resetTimer() {
     document.getElementById("minutes").value = "";
     document.getElementById("seconds").value = "";
 }
+
+// var audio = document.getElementById("audio")
+
+// function playSound(url) {
+//   const audio = new Audio();
+//   audio.play();
+// }
