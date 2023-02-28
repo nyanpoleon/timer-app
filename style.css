@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 body {
-    background-color: red;
+    background-color: #d9dde8;
     margin: 0;
+    font-family: 'Space Mono', monospace;
 }
 
 .main {
@@ -23,12 +24,35 @@ body {
     display: flex;
     text-align: center;
     flex-direction: row;
-    margin: 20px;
+    margin: 0px;
 }
 
 input {
     border: none;
-    height: 40px;
-    border-radius: 10px;
+    width: 160px;
+    height: 70px;
+    font-size: large;
     margin: 20px;
+    padding-left: 25px;
+
+    font-family: 'Space Mono', monospace;
+}
+
+button {
+    text-align: center;
+    transition-duration: 0.4s;
+    border-color: #23262a;
+    height: 60px;
+    width: 160px;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.button1 {
+    transition-duration: 0.4s;
+}
+.button1.hover {
+    background-color: #4CAF50;
+    color: white;
+
 }
