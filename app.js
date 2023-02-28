@@ -38,6 +38,13 @@ function startTimer() {
             audioSound.play();
             audioSound.onended = function() {
                 alert("Time Finished!");
+                // audioCount++;
+                // if (audioCount < 3) {
+                //     audioSound.play();
+                // } else {
+                //     alert("Time Finished!");
+                // }
+                
             }
             
             return;
@@ -53,9 +60,3 @@ function resetTimer() {
     document.getElementById("seconds").value = "";
 }
 
-// var audio = document.getElementById("audio")
-
-// function playSound(url) {
-//   const audio = new Audio();
-//   audio.play();
-// }
