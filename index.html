@@ -4,12 +4,18 @@
 	<title>Timer App</title>
 </head>
 <body>
-	
-	<input type="number" id="hours" placeholder="Hours">
-	<input type="number" id="minutes" placeholder="Minutes">
-	<input type="number" id="seconds" placeholder="Seconds">
-	<button onclick="startTimer()">Start</button>
-    <button onclick="resetTimer()">Reset</button>
+	<div class="main">
+		<div class="boxes">
+			<input type="number" id="hours" placeholder="Hours">
+			<input type="number" id="minutes" placeholder="Minutes">
+			<input type="number" id="seconds" placeholder="Seconds">
+		</div>
+		<div class="buttons">
+			<button onclick="startTimer()">Start</button>
+			<button onclick="resetTimer()">Reset</button>
+		</div>
+		
+	</div>
 	<audio id="audio" src="chime.mp3"></audio>
 	<div id="timer"></div>
 
