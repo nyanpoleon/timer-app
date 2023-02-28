@@ -33,9 +33,13 @@ function startTimer() {
 
         if (totalTime < 0) {
             clearInterval(timerInterval);
+            var audioSound = document.getElementById("audio");
             document.getElementById("timer").innerHTML = "Timer Finished!";
-            document.getElementById("audio").play();
-            alert("Time Finished!");
+            audioSound.play();
+            audioSound.onended = function() {
+                alert("Time Finished!");
+            }
+            
             return;
         }
     }, 1000);

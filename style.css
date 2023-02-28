@@ -38,7 +38,7 @@ input {
     font-family: 'Space Mono', monospace;
 }
 
-button {
+.button1,.button2 {
     text-align: center;
     transition-duration: 0.4s;
     border-color: #23262a;
@@ -48,11 +48,11 @@ button {
     
 }
 
-.button1 {
-    transition-duration: 0.4s;
-}
-.button1.hover {
-    background-color: #4CAF50;
-    color: white;
 
-}
+
+#timer {
+    margin-top: 60px;
+    color: #2a2d32;
+    font-size: 30px;
+    font-weight: bold;
+} 
