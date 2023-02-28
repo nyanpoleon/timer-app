@@ -1,4 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 body {
     background-color: red;
     margin: 0;
+}
+
+.main {
+    
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.boxes {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+input {
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
 }
