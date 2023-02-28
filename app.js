@@ -2,9 +2,9 @@ var timerInterval;
 
 function startTimer() {
 
-    // document.getElementById("hours").defaultValue = "00";
-    // document.getElementById("minutes").defaultValue = "00";
-    // document.getElementById("seconds").defaultValue = "00";
+    document.getElementById("hours").defaultValue = "00";
+    document.getElementById("minutes").defaultValue = "00";
+    document.getElementById("seconds").defaultValue = "00";
     
     var hours = parseInt(document.getElementById("hours").value);
     var minutes = parseInt(document.getElementById("minutes").value);
@@ -55,8 +55,8 @@ function startTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     document.getElementById("timer").innerHTML = "";
-    document.getElementById("hours").value = "";
-    document.getElementById("minutes").value = "";
-    document.getElementById("seconds").value = "";
+    document.getElementById("hours").value = "00";
+    document.getElementById("minutes").value = "00";
+    document.getElementById("seconds").value = "00";
 }
 
